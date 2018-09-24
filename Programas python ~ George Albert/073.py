@@ -1,0 +1,27 @@
+print('\033[1;32m='*100)
+print('{:^100}'.format('COLOCADOS NO BRASILEIRÃO 2018'))
+print('='*100)
+tabela = ('São Paulo','Flamengo','Internacional','Grêmio',
+          'Atlético-MG','Palmeiras','Corinthians','Cruzeiro',
+          'Fluminense','Botafogo','América-MG','Bahia','Chapecoense',
+          'Sport','Vasco','Vitória','Santos','Céara','Atético-PR',
+          'Paraná')
+print('\033[1;34m='*100,)
+print('{:^100}'.format('5ª PRIMEIROS COLOCADOS'))
+print('='*100)
+print(f'{tabela[0:6]} ')
+print('\033[1;31m='*100)
+print('{:^100}'.format('4ª ULTIMOS COLOCADOS'))
+print('='*100)
+print(f'{tabela[16:]}')
+print('\033[1;36m='*100)
+print('{:^100}'.format('TODOS OS TIMES EM ORDEM ALFABETICA!'))
+print('='*100)
+print(f'{sorted(tabela)}')
+print('\033[1;30m='*100)
+print('{:^100}'.format('ONDE ESTÁ CHAPECOENSE'))
+print('='*100)
+print('Chapecoense está na {}ª posição'.format(tabela.index('Chapecoense')))
+print('='*100)
+print('{:^100}'.format('ODEIO FUTEBOL. FIM'))
+print('='*100)

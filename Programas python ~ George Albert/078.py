@@ -1,0 +1,20 @@
+from time import sleep
+print('\033[1;32m='*50)
+print(f'{"NÚMEROS DIGITADOS":^50}')
+print('='*50)
+overflow = list()
+for c in range(0,5):
+    overflow.append(int(input('\nDigite um número: ')))
+    sleep(1)
+print('\033[1;33m='*50)
+print(f'{"POSICÕESE E VALORES":^50}')
+print('='*50)
+for p, n in enumerate(overflow):
+    print(f'\nNa posição {p} está o valor {n}')
+    sleep(2)
+print('\033[1;35m='*50)
+print(f'{"MAIOR E MENOR":^50}')
+print('='*50)
+print(f'\nO maior número digitado foi {max(overflow)}')
+sleep(1)
+print(f'\nO menor número digitado foi {min(overflow)}')
